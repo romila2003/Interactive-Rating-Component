@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+--orange: hsl(25, 97%, 53%);
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--medium-grey: hsl(216, 12%, 54%);
+--dark-blue: hsl(213, 19%, 18%);
+--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main-container, .thanks-container {
+    max-width: 410px;
+    margin: 5em auto;
+    padding: 1.5em; 
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.oval {
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.star {
+    transform: translate(11px, 11px)
+}
+
+h3 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.question {
+    padding: 1em 0 0.5em 0;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--light-grey);
+    padding-bottom: 0.5em;
+    line-height: 22px;
+}
+
+#rating {
+    display: inline-block; 
+}
+
+form {
+    margin: 2rem 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+form input[type="radio"] {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+form input[type="radio"] + label {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: var(--medium-grey);
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.2em;
+}
+
+form input[type="radio"]:hover + label {
+    background-color: var(--medium-grey);
+    color: var(--white);
+    cursor: default;
+}
+
+form input[type="radio"]:checked + label {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+.submit-btn {
+    padding-top: 1.5em;
+}
+
+.submit {
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 0.9em 1.8em;
+    border-radius: 22px;
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* THANK YOU SECTION */
+
+.hidden {
+    display: none;
+}
+
+section {
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    padding: 0.5em 0;
+}
+
+.selection {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    width: 60%;
+    border-radius: 22px;
+    padding: 0.5em;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.thank-you {
+    padding: 1.1em 0 0.5em 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: var(--white);
+    font-family: inherit;
+}
+
+footer a {
+    color: var(--medium-grey);
+}
+
+footer a:hover {
+    color: var(--orange);
+}
+
+@media screen and (min-width: 400px) {
+    ul li:not(.one) {
+        justify-content: unset;
+        padding-left: 1.5em;
+    }
+}

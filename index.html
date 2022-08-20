@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <!-- Rating state start -->
+  <main class="main-body">
+    <div class="main-container">
+        <div class="star-circle">
+          <div class="oval">
+            <svg class="star" width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+          </div>
+        </div>
+        <div class="text-content">
+          <h3 class="question">How did we do?</h3>
+          <p class="desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <form id="rating-btn">
+          <ul>
+            <li class="one">
+              <input type="radio" id="one" class="btn" name="rate" value="1">
+              <label class="num" for="1">1</label>
+            </li>
+            <li>
+              <input type="radio" id="two" class="btn" name="rate" value="2">
+              <label class="num" for="2">2</label>
+            </li>
+            <li>
+              <input type="radio" id="three" class="btn" name="rate" value="3">
+              <label class="num" for="3">3</label>
+            </li>
+            <li>
+              <input type="radio" id="four" class="btn" name="rate" value="4">
+              <label class="num" for="4">4</label>
+            </li>
+            <li>
+              <input type="radio" id="five" class="btn" name="rate" value="5">
+              <label class="num" for="5">5</label>
+            </li>
+          </ul>
+          </form>
+        <div class="submit-btn">
+          <input type="button" value="Submit" class="submit" id="submit">
+        </div>
+    </div>
+  </main>  
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="thanks-container hidden">
+    <section class="thanks">
+      <div class="img-holder">
+        <img src="images/illustration-thank-you.svg" alt="illustration thank you">
+    </div>
+    <div class="selection">
+      <p class="selected">You selected <span id="rating"></span> out of 5</p>
+    </div>
+    <div class="text-content-secondary">
+      <h3 class="thank-you">Thank you!</h3>
+      <p class="desc">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+    </section>
+  </div>
+  <!-- Thank you state end -->
+
+  <!-- Footer -->
+  
+   <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/romila2003">Romila</a>.
+   </footer> 
+ 
+  <!-- Footer end -->
+  <script src="script.js"></script>
+</body>
+</html>
