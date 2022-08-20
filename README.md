@@ -26,24 +26,24 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 # Mobile Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Interactive-Rating-Component/blob/main/Mobile%20preview.PNG)
 
 # Mobile Preview - active
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Interactive-Rating-Component/blob/main/Mobile%20preview%20-%20active.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Interactive-Rating-Component/blob/main/Desktop%20preview.PNG)
 
 # Mobile Preview - active 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Interactive-Rating-Component/blob/main/Desktop%20preview%20-%20active.PNG)
 
 ### Links
 
  - Source code: [https://github.com/romila2003/Interactive-Rating-Component](https://github.com/romila2003/Interactive-Rating-Component)
- - Live website: []()
+ - Live website: [https://romila-interactive-rating-component.netlify.app/](https://romila-interactive-rating-component.netlify.app/)
 
 ## My process
 
